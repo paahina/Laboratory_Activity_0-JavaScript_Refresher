@@ -18,7 +18,7 @@ body {
   border-radius: 1em;
   padding: 1.5em;
   width: 80ch;
-  height: 89vh;
+  max-height: 89vh;
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.15);
   gap: 1em;
 }
@@ -56,6 +56,10 @@ body {
   gap: 0.5em;
   overflow: auto;
 }
+.student-lists.empty {
+  justify-content: start;
+  align-items: center;
+}
 /*Student Box Styles*/
 .student-box {
   display: flex;
@@ -72,9 +76,21 @@ body {
 .student-box.mark-absent {
   background-color: #fffbeb;
 }
+
+.student-status {
+  font-weight: bold;
+}
+.student-status.status-present {
+  color: #1968dc;
+}
+.student-status.status-absent {
+  color: #d77000;
+}
 /*Student status*/
 .student-box .student-name {
+  display: flex;
   flex: 1;
+  gap: 0.5em;
 }
 .hidden {
   display: none;
