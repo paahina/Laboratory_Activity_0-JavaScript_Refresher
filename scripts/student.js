@@ -1,4 +1,4 @@
-class Student {
+export class Student {
   #name;
   #isPresent;
   constructor(name) {
@@ -13,8 +13,4 @@ class Student {
   }
 }
 
-export const students = [
-  new Student("Cyrus Robles"),
-  new Student("John Doe"),
-  new Student("Jane Smith"),
-];
+export const students = [new Student("Cyrus Robles")];
