@@ -7,7 +7,7 @@ export function addStudent() {
     return alert("Please enter a student name.");
   }
 
-  students.push(new Student(input.value));
+  students.push(new Student(students.length + 1, input.value));
   renderStudentList();
 
   input.value = "";

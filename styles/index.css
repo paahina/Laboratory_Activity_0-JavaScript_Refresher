@@ -60,11 +60,19 @@ body {
 .student-box {
   display: flex;
   align-items: center;
-  border: 1px solid #ccc;
+  border: 1px solid #d9e1ec;
   border-radius: 0.8em;
   padding: 0.8em 1em;
   gap: 0.5em;
 }
+/*Student status*/
+.student-box.mark-present {
+  background-color: #f1f8ff;
+}
+.student-box.mark-absent {
+  background-color: #fffbeb;
+}
+/*Student status*/
 .student-box .student-name {
   flex: 1;
 }
