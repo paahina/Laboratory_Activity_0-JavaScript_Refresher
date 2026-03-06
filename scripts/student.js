@@ -20,7 +20,7 @@ export class Student {
     return this.#id;
   }
 }
-//test
+
 export const students = [
   new Student(1, "Cyrus Robles"),
   new Student(2, "Page Aurellano"),
